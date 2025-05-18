@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\ClientAuthController;
 use App\Http\Controllers\Api\ChambreController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\ReservationController;
+use App\Http\Controllers\Api\ClientController;
 
 Route::prefix('auth')->group(function () {
     Route::post('/admin/login', [AdminAuthController::class, 'login']);
@@ -24,6 +25,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('/users', [UserController::class, 'index']);
     Route::delete('/users/{id}', [UserController::class, 'destroy']);
+
+    Route::get('/client/profile', [ClientController::class, 'profile']);
 
     Route::get('/reservations', [ReservationController::class, 'index']);
     Route::put('/reservations/{id}/status', [ReservationController::class, 'updateStatus']);
