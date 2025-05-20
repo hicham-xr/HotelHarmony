@@ -37,8 +37,7 @@ class ClientAuthController extends Controller
 
         return response()->json(['message' => 'Déconnexion réussie']);
     }
-    
-    public function register(Request $request)
+       public function register(Request $request)
 {
     $validatedData = $request->validate([
         'nom' => 'required|string|max:255',

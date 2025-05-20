@@ -6,15 +6,20 @@ use App\Http\Controllers\Controller;
 use App\Models\Chambre;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
 class ChambreController extends Controller
 {
     public function index()
-    {
-        $chambres = Chambre::all();
-        return response()->json($chambres);
-    }
+{
+    $chambres = Chambre::all()->map(function ($chambre) {
+        $chambre->photo_url = $chambre->photo ? asset('storage/' . $chambre->photo) : null;
+        return $chambre;
+    });
 
+    return response()->json($chambres);
+}
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -66,5 +71,11 @@ class ChambreController extends Controller
         $chambre->delete();
 
         return response()->json(['message' => 'Chambre supprimée avec succès']);
+    }
+    public function show($id)
+    {
+        $chambre = Chambre::findOrFail($id);
+        $chambre->photo_url = $chambre->photo ? asset('storage/' . $chambre->photo) : null;
+        return response()->json($chambre);
     }
 }

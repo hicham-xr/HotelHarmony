@@ -67,15 +67,28 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
+        $user = auth()->user();
         $validated = $request->validate([
-            'id_client' => 'required|exists:clients,id',
+
             'id_chambre' => 'required|exists:chambres,id',
-            'dateArrive' => 'required|date',
+            'dateArrive' => 'required|date|after_or_equal:today',
             'dateDepart' => 'required|date|after:dateArrive',
-            'etat' => 'sometimes|integer',
+            'nbPersonne' => 'required|integer|min:1',
         ]);
 
-        $reservation = Reservation::create($validated);
-        return response()->json($reservation, 201);
+        try {
+            $reservation = Reservation::create([
+                'id_client' => $user->id,
+                'id_chambre' => $validated['id_chambre'],
+                'dateArrive' => $validated['dateArrive'],
+                'dateDepart' => $validated['dateDepart'],
+                'nbPersonne' => $validated['nbPersonne'],
+                'etat' => false, // Default from migration
+            ]);
+            return response()->json($reservation, 201);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Erreur lors de la création de la réservation'], 500);
+        }
     }
+
 }
