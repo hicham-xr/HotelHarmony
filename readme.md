@@ -197,4 +197,12 @@ Commitez vos modifications (git commit -m "Ajout de votre fonctionnalité").
 Poussez votre branche (git push origin feature/votre-fonctionnalité).
 Ouvrez une Pull Request.
 
+## 🎓 Réalisé par :
 
+**Salah Eddine E-ZZAIME**  
+**Hicham Chakir**
+Étudiants en 1ère année cycle ingénieur  
+Filière : Ingénierie Informatique et Technologies Émergentes  
+
+
+https://github.com/salahzaim330
