@@ -1,0 +1,93 @@
+.reservations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reservations-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.no-reservations {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.reservations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reservations-table th,
+.reservations-table td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.reservations-table th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+.reservations-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.reservations-table tr:hover {
+  background: #f1f1f1;
+}
+
+.cancel-button {
+  padding: 8px 12px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cancel-button:hover {
+  background: #c0392b;
+}
+
+.cancel-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 50px 0;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .reservations-table th,
+  .reservations-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .cancel-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}

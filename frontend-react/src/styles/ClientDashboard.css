@@ -1,0 +1,39 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: #f4f7fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.no-rooms {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-text, .error-text {
+  font-size: 1.5rem;
+  color: #666;
+}

@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  color:rgb(6, 31, 57);
+}
+
+.navbar-right a,
+.navbar-right button {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-right a:hover,
+.navbar-right button:hover {
+  color:rgb(6, 31, 57);
+}

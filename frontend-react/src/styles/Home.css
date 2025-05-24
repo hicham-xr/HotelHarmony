@@ -1,0 +1,141 @@
+.home-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    color: #1a202c;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  
+  .btn-outline {
+    color: #1a202c;
+    border: 2px solid #1a202c;
+    background-color: transparent;
+  }
+  
+  .btn-outline:hover {
+    background-color: #1a202c;
+    color: white;
+  }
+  
+  .btn-filled {
+    background-color: #1a202c;
+    color: white;
+  }
+  
+  .btn-filled:hover {
+    background-color: #8a2be2;
+  }
+  
+  .hero {
+    background: url('../assets/images/hotelluxe.jpg') no-repeat center/cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero h1 span {
+    color: #a12cb9;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  
+  .btn-see-rooms {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a12cb9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-see-rooms:hover {
+    background-color: #8a2be2;
+  }
+  
+  .why-us-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.why-us-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.reason {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reason h3 {
+  font-size: 24px;
+  color: #a12cb9;
+  margin-bottom: 10px;
+}
+
+.reason p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive version */
+@media (min-width: 768px) {
+  .reasons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reason {
+    width: 250px;
+  }
+}
