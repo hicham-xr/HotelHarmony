@@ -18,7 +18,7 @@ Composer – Gestion des dépendances PHP
 
 Cloner le projet
 
-git clone https://github.com/your-username/hotel-harmony.git
+git clone https://github.com/salahzaim330/projet_Hotel_Harmony.git
 cd hotel-management
 
 
