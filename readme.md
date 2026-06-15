@@ -25,7 +25,7 @@ cd backend
 composer install  
 
 **Frontend** (React) :  
-cd ../frontend  
+cd ../frontend-react  
 npm install  
 
 ### Configurer l’environnement  
