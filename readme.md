@@ -52,7 +52,7 @@ cd backend
 php artisan serve  
 
 **Frontend :**    
-cd frontend  
+cd frontend-react  
 npm run dev  
 
 ## 🖥️ Lancer le projet
@@ -107,7 +107,7 @@ Validation des dates pour éviter les réservations invalides.
 │   │   ├── Models/            # Room.php, Booking.php  
 │   ├── database/migrations/    # Schéma de la base de données  
 │   ├── routes/api.php         # Définition des routes API  
-├── frontend/                   # Frontend React  
+├── frontend-react /                   # Frontend React  
 │   ├── public/                # Fichiers publics (index.html, favicon)  
 │   ├── src/  
 │   │   ├── pages/             # Pages React  
