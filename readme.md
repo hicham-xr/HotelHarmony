@@ -56,7 +56,7 @@ php artisan serve
 
 **Frontend :**    
 cd frontend-react  
-npm run dev  
+npm start  
 
 ## 🖥️ Lancer le projet
 
