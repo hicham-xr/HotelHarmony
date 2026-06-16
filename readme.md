@@ -13,6 +13,9 @@ Date de dernière mise à jour : 24 mai 2025, 20:29 (UTC+01:00).
 **Node.js & npm** – Gestion des dépendances frontend  
 **Composer** – Gestion des dépendances PHP  
 
+## 🎥 Demo Video
+[![HotelHarmony Demo](assets/demo-thumbnail.png)]([https://youtu.be/YOUR_VIDEO_ID](https://youtu.be/o-S_bDARBow?si=ASr0zXaA84pRZhan))
+
 ## 📦 Installation
 
 ### Cloner le projet  
